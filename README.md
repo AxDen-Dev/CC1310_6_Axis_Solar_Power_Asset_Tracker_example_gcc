@@ -5,12 +5,6 @@
 
 ----
 
-6-Axis Sub-G LongRang Solar Power Asset Tracker 은 가속도, 각속도, 온도, 대기압, GPS 위치와 같은 Asset tracking 에 필요한 핵심적인 정보를 수집하고 태양광 충전을 이용하여 배터리를 충전합니다.
-<br>
-<br>
-1Km 이상의 장거리 통신이 필요한 다양한 서비스 시나리오를 빠르게 테스트 할 수 있도록 제공하는 예제입니다.
-<br>
-<br>
 The 6-Axis Sub-G LongRang Solar Power Asset Tracker collects key information required for asset tracking such as acceleration, angular velocity, temperature, atmospheric pressure, and GPS location, and charges the battery using solar charging.
 <br>
 <br>
@@ -19,18 +13,24 @@ This is an example that provides quick testing of various service scenarios that
 
 ----
 
-[네이버 스마트 스토어](https://smartstore.naver.com/axden)
+Device can be purchased from the Naver Smart Store.
 <br>
+
+[Purchase Link : naver smart store](https://smartstore.naver.com/axden)
+<br>
+<br>
+
+You can purchase it by contacting sales@axden.io
 
 ----
 
-### 주요 특징 및 기능
+### Key feature and functions
 
-MCU | 설명
+MCU | Description
 :-------------------------:|:-------------------------:
 CC1310 | Sub-G SoC
 
-센서 | 설명
+Sensors | Description
 :-------------------------:|:-------------------------:
 L76 | GPS sensor
 MAX2659 | GPS LNA
@@ -41,41 +41,41 @@ SPV1050 | Solar battery charger (Max charge current 80mA)
 Solar | On board
 Battery | 3.7V Lithium Battery
 
-Sub-G 통신이 가능한 Solar power Asset tracker 입니다.
+It is a solar power asset tracker capable of Sub-G communication.
 <br>
 
-CC1310 SoC 를 이용하여 Sub-G 통신이 가능합니다.
+Sub-G wireless communication is performed using CC1310 SoC
 <br>
 
-SI7201 Hall 센서와 자석을 이용하여 On Off 할 수 있습니다.
+It can be turned on and off using Si7201 hall sensor and magnet.
 <br>
 
-L70 + MAX2659 / GPS + LNA 를 이용하여 위치 정보를 수집합니다.
+Collect location information using L70+MAX2659 / GPS+LNA.
 <br>
 
-SPV1050 과 Onboard로 부차된 태양광 패널을 이용하여 배터리를 충전합니다.
+Charge the battery using the SPV1050 and solar panels built into the board.
 <br>
 
-LSM6DL 을 이용하여 가속도, 자이로 값을 수집합니다.
+Use LSM6DSL to collect acceleration and gyro sensor values.
 <br>
 
-MS560702 를 이용하여 온도, 기압, 해발고도 정보를 수집합니다.
+MS560702 is used to collect information on temperature, air pressure, and altitude.
 <br>
 
-배터리를 이용하여 5년동안 사용 가능합니다.
+It operates for 5 years using a battery.
 <br>
 
 ----
 
 ### Note
 
-해당 프로그램으로 예제 프로그램으로 양산 및 상용화에 적합하지 않습니다.
+This program is not suitable for mass production and commercialization as an example program.
 <br>
 
-양산 및 대량 구매 고객께서는 development@axden.io 으로 문의 주시기 바랍니다.
+B2B customers should contact development@axden.io.
 <br>
 
-양산 및 대량 구매 고객분들께는 Ti SC 를 이용한 저전력, 안정화, 게이트웨이와 통신 등 사용하시는 목적에 맞는 최적화된 Firmware 를 무료로 개발해 드립니다.
+For B2B customers, we develop firmware optimized for customers' purposes, such as low power, stabilization, and communication with gateways, for free.
 <br>
 
 <table>
@@ -89,7 +89,7 @@ MS560702 를 이용하여 온도, 기압, 해발고도 정보를 수집합니다
   </tr>
 </table>
 
-Pinmap 은 ```board_define.h``` 파일에서 확인 가능합니다.
+Pinmap can be found in the file ```board_define.h```
 <br>
 
 ```
@@ -113,7 +113,7 @@ Pinmap 은 ```board_define.h``` 파일에서 확인 가능합니다.
 
 ```
 
-Sub-G 통신 관련 설정은 ```RadioTask.c``` 파일에서 확인 가능합니다.
+Sub-G communication-related settings can be found in the ```RadioTask.c``` file.
 <br>
 
 ```
